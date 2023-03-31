@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  min-width: 250px;
+}
+
+/* Включите отступ и границу в общую ширину и высоту элемента */
+* {
+  box-sizing: border-box;
+}
+
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Стиль заголовка */
+.header {
+  background-color: #D2B48C;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+
+/* Стиль ввода */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Стиль кнопки "Добавить" */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+</style>
+</head>
+<body>
+
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">Список дел</h2>
+  <input type="text" id="myInput" placeholder="Название...">
+  <span onclick="newElement()" class="addBtn">Добавить</span>
+</div>
+
+<ul id="myUL">
+  <li>Попасть в спортзал</li>
+  <li class="checked">Оплатить счета</li>
+  <li>Доработка сайта</li>
+  <li>Купить яйца</li>
+  <li>Прочитать книгу</li>
+  <li>Организовать офис</li>
+</ul>
+
+
+</body>
+</html>
